@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <style>
+      body{
+        text-align: center;
+        margin: 20px auto;
+      }
+
+      div {
+        margin: 0 auto;
+        width: 600px;
+      }
+    </style>
+    <!-- You should properly set the path from the main file. -->
+
+    <title>Caesar's Cipher</title>
+  </head>
+
+  <body>
+
+    <h1>Caesar's Cipher</h1>
+
+    <div>
+      <div class="column column-40">
+        <input type="text" id="word" placeholder="insira a palavra a ser criptorafada ou descriptorafada">
+        <input type="number" id="codeValue" placeholder="Insira o valor da codificação">
+      </div>
+
+      <button class ='cipher'>Cifrar</button>
+    </div>
+
+    <div id = "response">
+
+    </div>
+  </body>
+
+  <script src="/app.js"></script>
+</html>
