@@ -6,5 +6,5 @@ Cifra de César feita utilizando:
 
 ## Como usar a cifra
 - escreva uma palavra em letras maiúsculas no campo indicado.
-- escolha uma cifra: um número de 1 a 15 que vai ser usado como índice de codificação da palavra
 - aguarde sua palavra criptorafada ou descriptografada aparecer na tela :) 
+- a criptorafia é básica, e funciona como uma transposição de caracteres para 13 'espaços' à frente

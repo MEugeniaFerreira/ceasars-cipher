@@ -3,16 +3,13 @@ const inputText = document.querySelector('#word')
 const p = document.createElement('p');
 const response = document.querySelector('#response')
 const cipherButton = document.querySelector('.cipher')
-const uncipherButton = document.querySelector('.uncipher')
-
-const code = document.querySelector('#codeValue');
 
 const alphabet = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
 'M', 'N', 'O', 'P', 'Q', 'R',  'S', 'T', 'U', 'V', 'W', 'X',
 'Y', 'Z' ]
 
 
-function cipher13(str, codefy){
+function cipher13(str){
   //criar acumulador
   //rolar o loop pela strin inteira
   //se não fizer parte do alfabeto, não fazer nada. adiciona ao acc
@@ -31,7 +28,7 @@ function cipher13(str, codefy){
       
       const charIndex = alphabet.findIndex((c) => c === char)
       
-      accumulator += alphabet[charIndex + codefy ] || alphabet[charIndex - codefy];
+      accumulator += alphabet[charIndex + 13 ] || alphabet[charIndex - 13];
     }
   }
   
@@ -44,7 +41,8 @@ function cipher13(str, codefy){
 }
 
 cipherButton.addEventListener('click', () => {
-  cipher13(inputText.value, Number(code.value))
+  cipher13(inputText.value)
 } );
+
 
 
